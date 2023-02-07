@@ -8,7 +8,7 @@ import sys
 import ctypes
 
 path = "./liball.so"    # set library path
-lib = ctypes.CDLL(path)       # init library
+lib = ctypes.CDLL(path)		  # init library
 
 # set argtype to avoid overflow
 lib.smallest_divisor.argtypes = [ctypes.c_ulonglong]
